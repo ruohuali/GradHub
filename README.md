@@ -1,11 +1,10 @@
-<h2 style="text-align: center;">Gradhub ― An Efficient Search Tool for Graduate School Application</h2>
+## Gradhub ― An Efficient Search Tool for Graduate School Application 
 
- <h3 style="text-align: center;">CS411 Final Project By Team 37 (PandaExpress)</h3>
+### CS411 Final Project By Team 37 (PandaExpress)
 
-<p style="color:blue;">{Zhaoxu Deng, Kehang Chang, Ruohua Li, Jialiang Zhang}@UIUC</p>
+###### {Zhaoxu Deng, Kehang Chang, Ruohua Li, Jialiang Zhang}@UIUC
 
-
-I. Brief Description
+#### I. Brief Description
 
 Our project for CS411 is called GradHub and its main purpose is to help undergraduate students who are planning to apply for graduate school gather information about basic information of the schools, majors and programs around the globe. The users could look for programs by major or university. They could also search for professors for information about their affiliation and field of expertise. We also implemented a machine learning algorithm that accepts applicants’ academic records and gives feedback on the school they might be able to get in.   
 
