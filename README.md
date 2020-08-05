@@ -2,7 +2,7 @@
 
  <h3 style="text-align: center;">CS411 Final Project By Team 37 (PandaExpress)</h3>
 
-<p style="text-align: center;">{Zhaoxu Deng, Kehang Chang, Ruohua Li, Jialiang Zhang}@UIUC</p>
+<p style="color:blue;">{Zhaoxu Deng, Kehang Chang, Ruohua Li, Jialiang Zhang}@UIUC</p>
 
 
 I. Brief Description
