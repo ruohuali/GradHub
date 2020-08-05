@@ -30,91 +30,62 @@ ER Diagram:
 
 Schema:
 
-`CREATE TABLE University{
+`CREATE TABLE University{`
 
-UniversityName VARCHAR(255) NOT NULL,
+`UniversityName VARCHAR(255) NOT NULL,`
 
-PRIMARY KEY(UniversityName)
+`PRIMARY KEY(UniversityName)`
 
-}
+`}`
 
-CREATE TABLE College{
+`CREATE TABLE College{`
 
-CollegeName VARCHAR(255) NOT NULL,
+`CollegeName VARCHAR(255) NOT NULL,`
 
-UniversityName VARCHAR(255) NOT NULL,
+`UniversityName VARCHAR(255) NOT NULL,`
 
-PRIMARY KEY(CollegeName, UniversityName),
+`PRIMARY KEY(CollegeName, UniversityName),`
 
-Foreign Key(UniversityName) References University On Delete Cascade On Update Cascade
+`Foreign Key(UniversityName) References University On Delete Cascade On Update Cascade`
 
-}
+`}`
 
-CREATE TABLE Program{
+`CREATE TABLE Program{`
+`ProgramName VARCHAR(255) NOT NULL,`
+`MajorName VARCHAR(255) NOT NULL,`
+`URL VARCHAR(255) NOT NULL,`
+`GPAbar INT,`
+`GREbar INT,`
+`FieldName VARCHAR(255),`
+`PRIMARY KEY(URL), `
+`}`
 
-ProgramName VARCHAR(255) NOT NULL,
+`CREATE TABLE Master{`
+`MasterName VARCHAR(255) NOT NULL,`
+`FundingOption BOOLEAN,`
+`URL VARCHAR(255) NOT NULL,`
+`ProfId INT,`
+`PRIMARY KEY(URL),`
+`FOREIGN KEY (URL) REFERENCES Program,`
+`FOREIGN KEY (ProfId) REFERENCES Professor`
+`}`
 
-MajorName VARCHAR(255) NOT NULL,
+`CREATE TABLE PhD{`
+`PhDName VARCHAR(255) NOT NULL,`
+`FundingOption BOOLEAN,`
+`URL VARCHAR(255) NOT NULL,`
+`ProfId INT,`
+`PRIMARY KEY(URL),`
+`FOREIGN KEY (URL) REFERENCES Program,`
+`FOREIGN KEY (ProfId) REFERENCES Professor`
+`}`
 
-URL VARCHAR(255) NOT NULL,
-
-GPAbar INT,
-
-GREbar INT,
-
-FieldName VARCHAR(255),
-
-PRIMARY KEY(URL), 
-
-}
-
-CREATE TABLE Master{
-
-MasterName VARCHAR(255) NOT NULL,
-
-FundingOption BOOLEAN,
-
-URL VARCHAR(255) NOT NULL,
-
-ProfId INT,
-
-PRIMARY KEY(URL),
-
-FOREIGN KEY (URL) REFERENCES Program,
-
-FOREIGN KEY (ProfId) REFERENCES Professor
-
-}
-
-CREATE TABLE PhD{
-
-PhDName VARCHAR(255) NOT NULL,
-
-FundingOption BOOLEAN,
-
-URL VARCHAR(255) NOT NULL,
-
-ProfId INT,
-
-PRIMARY KEY(URL),
-
-FOREIGN KEY (URL) REFERENCES Program,
-
-FOREIGN KEY (ProfId) REFERENCES Professor
-
-}
-
-CREATE TABLE Professor{
-
-ProfId INT,
-
-ProfName VARCHAR(255) NOT NULL,
-
-FieldOfExpertise VARCHAR(255),
-
-PRIMARY KEY(ProfId),
-
-}`
+`CREATE TABLE Professor{`
+`ProfId INT,`
+`ProfName VARCHAR(255) NOT NULL,`
+`FieldOfExpertise VARCHAR(255),`
+`PRIMARY KEY(ProfId),`
+`}`
 
 
 *V. Method for collecting Data*
