@@ -1,6 +1,6 @@
-<h1>Gradhub ― An Efficient Search Tool for Graduate School Application<h1>
+<h2 style="text-align: center;">Gradhub ― An Efficient Search Tool for Graduate School Application</h2>
 
- CS411 Final Project By Team 37 (PandaExpress)
+ <h3 style="text-align: center;">CS411 Final Project By Team 37 (PandaExpress)</h3>
 
 {Zhaoxu Deng, Kehang Chang, Ruohua Li, Jialiang Zhang}@UIUC
 
