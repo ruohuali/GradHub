@@ -1,4 +1,4 @@
-Gradhub ― An Efficient Search Tool for Graduate School Application
+<h1>Gradhub ― An Efficient Search Tool for Graduate School Application<h1>
 
  CS411 Final Project By Team 37 (PandaExpress)
 
